@@ -1,10 +1,10 @@
 package br.gov.sp.fatec.service.impl;
 
-import br.gov.sp.fatec.domain.mapper.ClienteMapper;
+
 import br.gov.sp.fatec.domain.request.ClienteRequest;
 import br.gov.sp.fatec.domain.request.ClienteUpdateRequest;
 import br.gov.sp.fatec.domain.response.ClienteResponse;
-import br.gov.sp.fatec.repository.ClienteRepository;
+// No changes needed, removing unused import statement
 import br.gov.sp.fatec.service.ClienteService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -13,9 +13,6 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class ClienteServiceImpl implements ClienteService {
-
-    private final ClienteRepository clienteRepository;
-    private final ClienteMapper clienteMapper;
 
     @Override
     public ClienteResponse save(ClienteRequest clienteRequest) {

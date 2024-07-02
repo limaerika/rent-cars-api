@@ -7,13 +7,35 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-@Entity
-@Getter
-@Setter
-@RequiredArgsConstructor
-public class Cliente {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+public class Cliente {
+    private String nome;
+    private String cpf;
+    private String telefone;
+
+    // getters
+    public String getNome() {
+        return this.nome;
+    }
+
+    public String getCpf() {
+        return this.cpf;
+    }
+
+    public String getTelefone() {
+        return this.telefone;
+    }
+
+    // setters
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
 }
